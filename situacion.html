@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situación Problema – SimFac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon"><svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fff"/><line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/></svg></div>
+      SimFac
+    </a>
+    <span class="page-indicator">Situación Problema</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item">Inicio</a>
+        <a href="situacion.html" class="menu-item current">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item">Marca</a>
+        <a href="prototipo.html" class="menu-item">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-number">01 — Contexto</div>
+    <svg width="160" height="46" viewBox="0 0 216 64" style="margin-bottom: 12px;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="46" height="46" x="0" y="0" rx="12" fill="url(#lg1)"/><line x1="12" y1="10" x2="12" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="10" x2="20" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12,18C11,21.5,11,24,16,25C21,24,21,21.5,20,18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="25" x2="16" y2="38" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="13" x2="26" y2="35" stroke="#fff" stroke-width="0.6" opacity="0.2" stroke-linecap="round"/><line x1="29" y1="17" x2="41" y2="17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="24" x2="41" y2="24" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="31" x2="37" y2="31" stroke="#fff" stroke-width="2" stroke-linecap="round"/><text y="33" font-family="Georgia,serif" font-size="30" letter-spacing="-0.5"><tspan x="54" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan></text></svg>
+    <h1 class="reveal">Situación Problema</h1>
+    <p class="page-desc reveal">Análisis del contexto actual y formulación de la pregunta de investigación que guía el proyecto SimFac.</p>
+  </div>
+
+  <main class="section">
+    <!-- CONTEXTO -->
+    <div class="section-title reveal">
+      <span class="icon">🔍</span>
+      El contexto actual de los restaurantes
+    </div>
+
+    <div class="card-dark reveal mb-4">
+      <p>En la mayoría de restaurantes de mediano y pequeño tamaño en Colombia, la recepción de pedidos aún depende de métodos tradicionales: llamar al mesero, esperar en largas filas o descargar aplicaciones pesadas que requieren registro previo.</p>
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <div class="card-icon">📉</div>
+        <h3>Pérdida de clientes</h3>
+        <p>Tiempos de espera excesivos generan abandono. Un cliente que espera más de 10 minutos para hacer su pedido tiene un 67% más de probabilidades de no volver.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">❌</div>
+        <h3>Errores en pedidos</h3>
+        <p>La comunicación verbal entre mesero y cocina produce equivocaciones frecuentes que afectan la satisfacción del cliente y generan pérdidas para el negocio.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">📋</div>
+        <h3>Falta de trazabilidad</h3>
+        <p>Sin un sistema centralizado, es imposible rastrear el estado de cada pedido en tiempo real entre la mesa, la cocina y la caja.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">😤</div>
+        <h3>Experiencia deficiente</h3>
+        <p>El cliente moderno espera autonomía digital. Obligarlo a procesos analógicos reduce la fidelización y la percepción de calidad del servicio.</p>
+      </div>
+    </div>
+
+    <!-- DESIGN THINKING -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">💡</span>
+      Enfoque Design Thinking
+    </div>
+
+    <div class="card-dark reveal mb-4">
+      <p>Para abordar este problema, aplicamos la metodología de <strong style="color: var(--amber-400);">Design Thinking</strong>, que nos permite entender profundamente las necesidades del usuario antes de proponer soluciones técnicas.</p>
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <div class="card-icon">👁️</div>
+        <h3>Empatizar</h3>
+        <p>Entrevistas con dueños de restaurantes y comensales para comprender sus frustraciones reales con el proceso de pedido actual.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🎯</div>
+        <h3>Definir</h3>
+        <p>Síntesis del problema central: la fricción en el proceso de pedido es la barrera principal entre el restaurante y la experiencia del cliente.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🧠</div>
+        <h3>Idear</h3>
+        <p>Brainstorming de soluciones: desde apps nativas hasta web apps con QR. Se priorizó la opción de menor fricción para el usuario final.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🖼️</div>
+        <h3>Prototipar</h3>
+        <p>Diseño en Figma de dos interfaces: panel de administración (web) y menú para comensal (mobile-first), validados con usuarios reales.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🧪</div>
+        <h3>Probar</h3>
+        <p>Pruebas de usabilidad con el prototipo navegable, identificando puntos de fricción y realizando iteraciones antes del desarrollo.</p>
+      </div>
+    </div>
+
+    <!-- PREGUNTA PROBLEMA -->
+    <div class="mt-4 reveal">
+      <div class="highlight-card">
+        <h2>Pregunta Problema</h2>
+        <p>¿Cómo diseñar un sistema de gestión de pedidos para restaurantes que elimine la fricción del cliente final (sin registros ni aplicaciones) y al mismo tiempo ofrezca control, seguridad y escalabilidad operativa para el negocio?</p>
+      </div>
+    </div>
+
+    <!-- JUSTIFICACIÓN -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">📐</span>
+      Justificación del Proyecto
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>SimFac no es solo una herramienta tecnológica — es una solución que transforma la operación de restaurantes de mediano y pequeño tamaño, abordando un problema real y medible:</p>
+      <ul style="padding-left: 20px; margin-top: 12px;">
+        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Impacto económico:</strong> Reducción de errores en pedidos y mejora en la rotación de mesas, incrementando los ingresos del negocio.</li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Impacto social:</strong> Digitalización accesible para restaurantes que no pueden invertir en sistemas costosos como Deliveroo o Rappi.</li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Impacto tecnológico:</strong> Aplicación de buenas prácticas de ingeniería (MVC, REST, normalización) en un contexto real.</li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Relevancia formativa:</strong> Integra competencias de análisis, diseño, desarrollo y gestión de proyectos del programa SENA.</li>
+      </ul>
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-btn prev">
+        <span>←</span>
+        Inicio
+      </a>
+      <a href="objetivos.html" class="nav-btn next">
+        Objetivos
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

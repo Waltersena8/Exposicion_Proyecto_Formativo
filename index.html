@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimFac – Presentación del Proyecto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon"><svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fff"/><line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/></svg></div>
+      SimFac
+    </a>
+    <span class="page-indicator">Portada</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item current">Inicio</a>
+        <a href="situacion.html" class="menu-item">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item">Marca</a>
+        <a href="prototipo.html" class="menu-item">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <svg width="180" height="52" viewBox="0 0 216 64" style="margin-bottom: 16px;">
+          <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs>
+          <rect width="52" height="52" x="0" y="0" rx="14" fill="url(#lg1)"/>
+          <line x1="13" y1="11" x2="13" y2="20" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="18" y1="11" x2="18" y2="20" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="23" y1="11" x2="23" y2="20" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M13,20C12,24,12,27,18,28C24,27,24,24,23,20" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="18" y1="28" x2="18" y2="43" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="29" y1="14" x2="29" y2="39" stroke="#fff" stroke-width="0.7" opacity="0.2" stroke-linecap="round"/>
+          <line x1="33" y1="19" x2="46" y2="19" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="33" y1="27" x2="46" y2="27" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="33" y1="35" x2="42" y2="35" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <text y="38" font-family="Georgia,serif" font-size="34" letter-spacing="-0.5">
+            <tspan x="62" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan>
+          </text>
+        </svg>
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Proyecto Formativo SENA — 4to Semestre
+      </div>
+      <h1>
+        <span class="gradient-text">SimFac</span>
+      </h1>
+      <p class="subtitle">Sistema de Gestión de Pedidos para Restaurantes mediante Código QR</p>
+      <div class="hook">
+        ¿Cuántos clientes pierdes por una experiencia de pedido lenta y complicada?
+      </div>
+      <br>
+      <a href="situacion.html" class="hero-cta">
+        Descubre la solución
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="section">
+    <div class="section-title reveal">
+      <span class="icon">🍽️</span>
+      ¿Por qué SimFac es la solución?
+    </div>
+
+    <div class="card-grid stagger">
+      <div class="card-dark reveal">
+        <div class="card-icon">📱</div>
+        <h3>Fricción Cero</h3>
+        <p>Sin registros, sin descargas. El comensal escanea un código QR, ve el menú digital y realiza su pedido en segundos desde su propio dispositivo.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🔐</div>
+        <h3>Seguridad y Control</h3>
+        <p>Roles centralizados (administrador, mesero, cajero) con contraseñas encriptadas mediante bcrypt y registro de auditoría completo en la base de datos.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">📈</div>
+        <h3>Escalabilidad</h3>
+        <p>Arquitectura MVC con API REST y base de datos normalizada, diseñada para crecer con nuevos módulos sin reestructurar el sistema existente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="section">
+    <div class="card-grid stagger">
+      <div class="card-dark reveal text-center">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--amber-400);" data-count="3" data-suffix="">0</div>
+        <p>Roles del sistema (Admin, Mesero, Cajero)</p>
+      </div>
+      <div class="card-dark reveal text-center">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--amber-400);" data-count="2" data-suffix="">0</div>
+        <p>Fases de desarrollo planificadas</p>
+      </div>
+      <div class="card-dark reveal text-center">
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--amber-400);" data-count="8" data-suffix="">0</div>
+        <p>Sprints ágiles en el cronograma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="section">
+    <div class="section-title reveal">
+      <span class="icon">👥</span>
+      Equipo de Desarrollo
+    </div>
+    <div class="card-grid stagger">
+      <div class="card-dark reveal text-center">
+        <div style="font-size: 2rem; margin-bottom: 8px;">👨‍💻</div>
+        <h3>Walter</h3>
+        <p>Desarrollador Full Stack – Diseño UI/UX – Líder de proyecto</p>
+      </div>
+      <div class="card-dark reveal text-center">
+        <div style="font-size: 2rem; margin-bottom: 8px;">👨‍💻</div>
+        <h3>Omar</h3>
+        <p>Desarrollador Frontend – Base de Datos – Pruebas</p>
+      </div>
+    </div>
+
+    <div class="nav-buttons mt-4">
+      <span></span>
+      <a href="situacion.html" class="nav-btn next">
+        Situación Problema
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

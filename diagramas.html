@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagramas – SimFac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon"><svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fff"/><line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/></svg></div>
+      SimFac
+    </a>
+    <span class="page-indicator">Diagramas</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item">Inicio</a>
+        <a href="situacion.html" class="menu-item">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item current">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item">Marca</a>
+        <a href="prototipo.html" class="menu-item">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-number">03 — Modelado</div>
+    <svg width="160" height="46" viewBox="0 0 216 64" style="margin-bottom: 12px;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="46" height="46" x="0" y="0" rx="12" fill="url(#lg1)"/><line x1="12" y1="10" x2="12" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="10" x2="20" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12,18C11,21.5,11,24,16,25C21,24,21,21.5,20,18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="25" x2="16" y2="38" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="13" x2="26" y2="35" stroke="#fff" stroke-width="0.6" opacity="0.2" stroke-linecap="round"/><line x1="29" y1="17" x2="41" y2="17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="24" x2="41" y2="24" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="31" x2="37" y2="31" stroke="#fff" stroke-width="2" stroke-linecap="round"/><text y="33" font-family="Georgia,serif" font-size="30" letter-spacing="-0.5"><tspan x="54" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan></text></svg>
+    <h1 class="reveal">Diagramas del Sistema</h1>
+    <p class="page-desc reveal">Modelo Entidad-Relación (conceptual, lógico y físico), diagrama de clases, diccionario de datos y componentes de seguridad en la base de datos.</p>
+  </div>
+
+  <main class="section">
+
+    <!-- ===================== SECTION 1: MER CONCEPTUAL ===================== -->
+    <div class="section-title reveal">
+      <span class="icon">📐</span>
+      Modelo Entidad-Relación (MER) — Conceptual
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>El modelo conceptual representa las entidades principales del sistema, sus atributos más relevantes y las relaciones entre ellas a alto nivel, sin detallar tipos de datos ni restricciones físicas. Sirve como base para la comunicación entre analistas y partes interesadas.</p>
+    </div>
+
+    <div class="diagram-container reveal" style="padding: 0; overflow: hidden;">
+      <img src="img/mer-conceptual.png" alt="Modelo Entidad-Relación Conceptual de SimFac" style="width: 100%; height: auto; display: block; border-radius: var(--radius-sm);">
+    </div>
+
+    <!-- ===================== SECTION 2: MODELO LÓGICO ===================== -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🔧</span>
+      Modelo Lógico — Tablas y Relaciones
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>El modelo lógico transforma el modelo conceptual en tablas con columnas, tipos de datos, claves primarias (<strong style="color: var(--amber-400);">PK</strong>) y claves foráneas (<strong style="color: var(--amber-400);">FK</strong>). Define las cardinalidades y reglas de integridad referencial entre las entidades.</p>
+    </div>
+
+    <div class="diagram-container reveal" style="padding: 0; overflow: hidden;">
+      <img src="img/mer-logico.png" alt="Modelo Lógico de SimFac" style="width: 100%; height: auto; display: block; border-radius: var(--radius-sm);">
+    </div>
+
+    <!-- ===================== SECTION 3: MODELO FÍSICO ===================== -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🗄️</span>
+      Modelo Físico — Implementación en MySQL
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>El modelo físico muestra la implementación real de la base de datos en <strong style="color: var(--amber-400);">phpMyAdmin</strong> con tipos de datos específicos de MySQL (<code>INT</code>, <code>VARCHAR</code>, <code>DECIMAL</code>, <code>TIMESTAMP</code>, <code>TEXT</code>, <code>BOOLEAN</code>), restricciones <strong style="color: var(--amber-400);">NOT NULL</strong> en todas las PK y FK, y la estructura completa de cada tabla.</p>
+    </div>
+
+    <div class="diagram-container reveal" style="padding: 0; overflow: hidden;">
+      <img src="img/mer-fisico.png" alt="Modelo Físico de SimFac en MySQL" style="width: 100%; height: auto; display: block; border-radius: var(--radius-sm);">
+    </div>
+
+    <!-- ===================== SECTION 4: DIAGRAMA DE CLASES ===================== -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">📊</span>
+      Diagrama de Clases
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>El diagrama de clases muestra la estructura estática del sistema: 8 clases principales con sus atributos (prefijo <code>−</code> = privado) y métodos (prefijo <code>+</code> = público), junto con las relaciones de asociación entre ellas.</p>
+    </div>
+
+    <div class="card-grid stagger mt-3">
+
+      <!-- Clase: usuarios -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">usuarios</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − nombre : VARCHAR<br>
+            − email : VARCHAR<br>
+            − contraseña : VARCHAR<br>
+            − rol : VARCHAR<br>
+            − fecha_registro : TIMESTAMP
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + login()<br>
+            + registrar()<br>
+            + logout()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: mesas -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">mesas</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − numero : INT<br>
+            − capacidad : INT<br>
+            − estado : VARCHAR<br>
+            − qr_code : VARCHAR
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + generarQR()<br>
+            + cambiarEstado()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: categorias -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">categorias</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − nombre : VARCHAR<br>
+            − descripcion : VARCHAR<br>
+            − imagen : VARCHAR
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + crear()<br>
+            + actualizar()<br>
+            + eliminar()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: productos -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">productos</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − categoria_id : INT<br>
+            − nombre : VARCHAR<br>
+            − descripcion : TEXT<br>
+            − precio : DECIMAL<br>
+            − stock : INT<br>
+            − imagen : VARCHAR<br>
+            − disponible : BOOLEAN
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + crear()<br>
+            + actualizar()<br>
+            + cambiarDisponibilidad()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: pedidos -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">pedidos</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − mesa_id : INT<br>
+            − usuario_id : INT<br>
+            − estado : VARCHAR<br>
+            − total : DECIMAL<br>
+            − fecha : TIMESTAMP
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + crear()<br>
+            + actualizarEstado()<br>
+            + calcularTotal()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: detalle_pedido -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">detalle_pedido</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − pedido_id : INT<br>
+            − producto_id : INT<br>
+            − cantidad : INT<br>
+            − subtotal : DECIMAL
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + agregarItem()<br>
+            + calcularSubtotal()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: comprobantes -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">comprobantes</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − pedido_id : INT<br>
+            − cliente_id : INT<br>
+            − monto_pago : DECIMAL<br>
+            − pago : VARCHAR<br>
+            − fecha : TIMESTAMP
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + generar()<br>
+            + registrarPago()
+          </p>
+        </div>
+      </div>
+
+      <!-- Clase: logs_audit -->
+      <div class="card-dark reveal">
+        <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1.1rem;">logs_audit</h3>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; margin-bottom: 8px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.8);">
+            − id : INT<br>
+            − usuario_id : INT<br>
+            − accion : VARCHAR<br>
+            − tabla_afectada : VARCHAR<br>
+            − fecha : TIMESTAMP
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+          <p style="font-family: 'Courier New', monospace; font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.9);">
+            + registrar()
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Relaciones -->
+    <div class="card-dark reveal mt-3">
+      <h3 style="color: var(--amber-400); margin-bottom: 12px; font-size: 1rem;">Relaciones entre Clases</h3>
+      <div style="font-family: 'Courier New', monospace; font-size: 0.8rem; line-height: 2; color: rgba(255,255,255,0.85);">
+        <span style="color: var(--amber-400);">usuarios</span> 1 → N <span style="color: var(--amber-400);">pedidos</span><br>
+        <span style="color: var(--amber-400);">mesas</span> 1 → N <span style="color: var(--amber-400);">pedidos</span><br>
+        <span style="color: var(--amber-400);">categorias</span> 1 → N <span style="color: var(--amber-400);">productos</span><br>
+        <span style="color: var(--amber-400);">pedidos</span> 1 → N <span style="color: var(--amber-400);">detalle_pedido</span><br>
+        <span style="color: var(--amber-400);">productos</span> 1 → N <span style="color: var(--amber-400);">detalle_pedido</span><br>
+        <span style="color: var(--amber-400);">pedidos</span> 1 → 1 <span style="color: var(--amber-400);">comprobantes</span><br>
+        <span style="color: var(--amber-400);">usuarios</span> 1 → N <span style="color: var(--amber-400);">comprobantes</span><br>
+        <span style="color: var(--amber-400);">usuarios</span> 1 → N <span style="color: var(--amber-400);">logs_audit</span>
+      </div>
+    </div>
+
+    <!-- ===================== SECTION 5: DICCIONARIO DE DATOS ===================== -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">📖</span>
+      Diccionario de Datos
+    </div>
+
+    <div class="card-dark reveal mb-3" style="overflow-x: auto;">
+      <table class="table-dark" style="width: 100%; border-collapse: collapse; font-size: 0.82rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--amber-400);">
+            <th style="text-align: left; padding: 10px 12px; color: var(--amber-400);">Tabla</th>
+            <th style="text-align: left; padding: 10px 12px; color: var(--amber-400);">Campo</th>
+            <th style="text-align: left; padding: 10px 12px; color: var(--amber-400);">Tipo</th>
+            <th style="text-align: left; padding: 10px 12px; color: var(--amber-400);">Restricción</th>
+            <th style="text-align: left; padding: 10px 12px; color: var(--amber-400);">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- usuarios -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="6" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">usuarios</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del usuario</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">nombre</td><td style="padding: 8px 12px;">VARCHAR(100)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Nombre completo del usuario</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">email</td><td style="padding: 8px 12px;">VARCHAR(150)</td><td style="padding: 8px 12px;">NOT NULL, UNIQUE</td><td style="padding: 8px 12px;">Correo electrónico de acceso</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">contraseña</td><td style="padding: 8px 12px;">VARCHAR(255)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Contraseña cifrada del usuario</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">rol</td><td style="padding: 8px 12px;">VARCHAR(50)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Rol del usuario (Administrador, Mesero, Cajero, Comensal)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">fecha_registro</td><td style="padding: 8px 12px;">TIMESTAMP</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT CURRENT_TIMESTAMP</td><td style="padding: 8px 12px;">Fecha y hora de registro del usuario</td></tr>
+
+          <!-- mesas -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="5" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">mesas</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único de la mesa</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">numero</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">NOT NULL, UNIQUE</td><td style="padding: 8px 12px;">Número de mesa en el restaurante</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">capacidad</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Cantidad de comensales que soporta</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">estado</td><td style="padding: 8px 12px;">VARCHAR(50)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Estado actual (Libre, Ocupada, Reservada)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">qr_code</td><td style="padding: 8px 12px;">VARCHAR(255)</td><td style="padding: 8px 12px;">NULL</td><td style="padding: 8px 12px;">Ruta o código QR asignado a la mesa</td></tr>
+
+          <!-- categorias -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="4" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">categorias</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único de la categoría</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">nombre</td><td style="padding: 8px 12px;">VARCHAR(100)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Nombre de la categoría de producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">descripcion</td><td style="padding: 8px 12px;">VARCHAR(255)</td><td style="padding: 8px 12px;">NULL</td><td style="padding: 8px 12px;">Descripción breve de la categoría</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">imagen</td><td style="padding: 8px 12px;">VARCHAR(255)</td><td style="padding: 8px 12px;">NULL</td><td style="padding: 8px 12px;">Ruta de la imagen de la categoría</td></tr>
+
+          <!-- productos -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="8" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">productos</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">categoria_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia a la categoría del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">nombre</td><td style="padding: 8px 12px;">VARCHAR(150)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Nombre del producto en el menú</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">descripcion</td><td style="padding: 8px 12px;">TEXT</td><td style="padding: 8px 12px;">NULL</td><td style="padding: 8px 12px;">Descripción detallada del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">precio</td><td style="padding: 8px 12px;">DECIMAL(10,2)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Precio unitario del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">stock</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT 0</td><td style="padding: 8px 12px;">Cantidad disponible en inventario</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">imagen</td><td style="padding: 8px 12px;">VARCHAR(255)</td><td style="padding: 8px 12px;">NULL</td><td style="padding: 8px 12px;">Ruta de la imagen del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">disponible</td><td style="padding: 8px 12px;">BOOLEAN</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT TRUE</td><td style="padding: 8px 12px;">Indica si el producto está disponible</td></tr>
+
+          <!-- pedidos -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="6" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">pedidos</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del pedido</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">mesa_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia a la mesa asociada</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">usuario_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al usuario (mesero/cliente)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">estado</td><td style="padding: 8px 12px;">VARCHAR(50)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Estado del pedido (Pendiente, En preparación, Listo, Entregado, Cancelado)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">total</td><td style="padding: 8px 12px;">DECIMAL(10,2)</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT 0.00</td><td style="padding: 8px 12px;">Monto total calculado del pedido</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">fecha</td><td style="padding: 8px 12px;">TIMESTAMP</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT CURRENT_TIMESTAMP</td><td style="padding: 8px 12px;">Fecha y hora de creación del pedido</td></tr>
+
+          <!-- detalle_pedido -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="5" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">detalle_pedido</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del detalle</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">pedido_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al pedido asociado</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">producto_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al producto solicitado</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">cantidad</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Cantidad de unidades del producto</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">subtotal</td><td style="padding: 8px 12px;">DECIMAL(10,2)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Subtotal (precio × cantidad)</td></tr>
+
+          <!-- comprobantes -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="6" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">comprobantes</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del comprobante</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">pedido_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al pedido asociado</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">cliente_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al cliente que paga</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">monto_pago</td><td style="padding: 8px 12px;">DECIMAL(10,2)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Monto total pagado</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">pago</td><td style="padding: 8px 12px;">VARCHAR(50)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Método de pago (Efectivo, Tarjeta, Nequi)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">fecha</td><td style="padding: 8px 12px;">TIMESTAMP</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT CURRENT_TIMESTAMP</td><td style="padding: 8px 12px;">Fecha y hora de emisión del comprobante</td></tr>
+
+          <!-- logs_audit -->
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td rowspan="5" style="padding: 8px 12px; color: var(--amber-400); font-weight: 600; vertical-align: top;">logs_audit</td><td style="padding: 8px 12px;">id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">PK, NOT NULL, AUTO_INCREMENT</td><td style="padding: 8px 12px;">Identificador único del log</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">usuario_id</td><td style="padding: 8px 12px;">INT</td><td style="padding: 8px 12px;">FK, NOT NULL</td><td style="padding: 8px 12px;">Referencia al usuario que ejecutó la acción</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">accion</td><td style="padding: 8px 12px;">VARCHAR(100)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Acción realizada (INSERT, UPDATE, DELETE)</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">tabla_afectada</td><td style="padding: 8px 12px;">VARCHAR(100)</td><td style="padding: 8px 12px;">NOT NULL</td><td style="padding: 8px 12px;">Nombre de la tabla afectada</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 8px 12px;">fecha</td><td style="padding: 8px 12px;">TIMESTAMP</td><td style="padding: 8px 12px;">NOT NULL, DEFAULT CURRENT_TIMESTAMP</td><td style="padding: 8px 12px;">Fecha y hora de la acción</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== SECTION 6: COMPONENTES DE SEGURIDAD ===================== -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">⚙️</span>
+      Componentes de Seguridad en la Base de Datos
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <div class="card-icon">📦</div>
+        <h3>Procedimientos Almacenados</h3>
+        <p><strong style="color: var(--amber-400);">sp_RegistrarPedido:</strong> El motor MySQL valida la disponibilidad del producto antes de procesar la orden, evitando INSERTs directos desde el backend.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🔔</div>
+        <h3>Triggers</h3>
+        <p><strong style="color: var(--amber-400);">trg_AuditoriaCaja:</strong> Disparador automático que detecta si un 'Cajero' intenta alterar o eliminar un registro de venta, guardando una copia en una tabla de logs oculta.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">⏰</div>
+        <h3>Jobs</h3>
+        <p><strong style="color: var(--amber-400);">Optimización Automatizada:</strong> Evento programado a las 3:00 AM que limpia carritos abandonados y cancela pedidos huérfanos.</p>
+      </div>
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <div class="nav-buttons" style="margin-top: 40px;">
+      <a href="objetivos.html" class="nav-btn prev">
+        <span>←</span>
+        Objetivos
+      </a>
+      <a href="arquitectura.html" class="nav-btn next">
+        Arquitectura
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

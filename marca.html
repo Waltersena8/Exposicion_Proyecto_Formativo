@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marca – SimFac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon">
+        <svg width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="16" fill="#fff"/>
+          <line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+          <line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      SimFac
+    </a>
+    <span class="page-indicator">Marca</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item">Inicio</a>
+        <a href="situacion.html" class="menu-item">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item current">Marca</a>
+        <a href="prototipo.html" class="menu-item">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-number">06 — Identidad</div>
+    <svg width="160" height="46" viewBox="0 0 216 64" style="margin-bottom: 12px;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="46" height="46" x="0" y="0" rx="12" fill="url(#lg1)"/><line x1="12" y1="10" x2="12" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="10" x2="20" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12,18C11,21.5,11,24,16,25C21,24,21,21.5,20,18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="25" x2="16" y2="38" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="13" x2="26" y2="35" stroke="#fff" stroke-width="0.6" opacity="0.2" stroke-linecap="round"/><line x1="29" y1="17" x2="41" y2="17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="24" x2="41" y2="24" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="31" x2="37" y2="31" stroke="#fff" stroke-width="2" stroke-linecap="round"/><text y="33" font-family="Georgia,serif" font-size="30" letter-spacing="-0.5"><tspan x="54" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan></text></svg>
+    <h1 class="reveal">Manual de Marca</h1>
+    <p class="page-desc reveal">La identidad visual de SimFac: logotipo, paleta de colores, tipografía y aplicación de las propiedades Gestalt en la interfaz.</p>
+  </div>
+
+  <main class="section">
+
+    <h2 class="reveal" style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px;">Logotipo e Identidad Visual</h2>
+
+    <!-- BRAND CODE from simfac_logo_brand (1).html -->
+    <style>
+      .bw { border-radius: 12px; overflow: hidden; border: 0.5px solid var(--color-border-tertiary, #44403c); }
+      .bp { padding: 36px 32px; display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+      .b-dark  { background: #1A1510; }
+      .b-warm  { background: #FAF7F2; }
+      .b-base  { background: #fff; border-top: 0.5px solid rgba(42,34,24,0.07); padding: 24px 32px; flex-direction: column; align-items: flex-start; gap: 14px; }
+      .bi { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+      .lbl { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+      .ld { color: rgba(245,239,224,0.28); }
+      .ll { color: #8B7D6B; }
+      .sizes { display: flex; gap: 14px; align-items: flex-end; }
+      .si { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+      .pr { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+      .sw { display: flex; align-items: center; gap: 7px; }
+      .sd { width: 20px; height: 20px; border-radius: 5px; flex-shrink: 0; }
+      .sm { display: flex; flex-direction: column; }
+      .shx { font-size: 11px; font-family: monospace; color: var(--color-text-secondary, #78716c); }
+      .sn  { font-size: 10px; color: var(--color-text-tertiary, #a8a29e); }
+    </style>
+
+    <div class="bw">
+
+      <!-- ── DARK PANEL ── -->
+      <div class="bp b-dark">
+        <div class="bi">
+          <svg width="216" height="64" viewBox="0 0 216 64" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#F5A623"/>
+                <stop offset="100%" stop-color="#E8522A"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="16" fill="url(#g1)"/>
+            <line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="35" y1="16" x2="35" y2="48" stroke="#fff" stroke-width="0.8" opacity="0.2" stroke-linecap="round"/>
+            <line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <text y="46" font-family="Georgia,serif" font-size="38" letter-spacing="-0.5">
+              <tspan x="80" font-weight="700" fill="#F5EFE0">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan>
+            </text>
+          </svg>
+          <span class="lbl ld">Principal · fondo oscuro</span>
+        </div>
+        <div class="bi">
+          <svg width="64" height="64" viewBox="0 0 64 64">
+            <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs>
+            <rect width="64" height="64" rx="16" fill="url(#g2)"/>
+            <line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="35" y1="16" x2="35" y2="48" stroke="#fff" stroke-width="0.8" opacity="0.2" stroke-linecap="round"/>
+            <line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="lbl ld">Ícono solo</span>
+        </div>
+      </div>
+
+      <!-- ── LIGHT PANEL ── -->
+      <div class="bp b-warm">
+        <div class="bi">
+          <svg width="216" height="64" viewBox="0 0 216 64">
+            <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs>
+            <rect width="64" height="64" rx="16" fill="url(#g3)"/>
+            <line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="35" y1="16" x2="35" y2="48" stroke="#fff" stroke-width="0.8" opacity="0.2" stroke-linecap="round"/>
+            <line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <text y="46" font-family="Georgia,serif" font-size="38" letter-spacing="-0.5">
+              <tspan x="80" font-weight="700" fill="#1A1510">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan>
+            </text>
+          </svg>
+          <span class="lbl ll">Versión clara</span>
+        </div>
+        <div class="bi">
+          <div class="sizes">
+            <div class="si">
+              <svg width="48" height="48" viewBox="0 0 64 64"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g4)"/><line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <span class="lbl ll">48px</span>
+            </div>
+            <div class="si">
+              <svg width="32" height="32" viewBox="0 0 64 64"><defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g5)"/><line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <span class="lbl ll">32px</span>
+            </div>
+            <div class="si">
+              <svg width="20" height="20" viewBox="0 0 64 64"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g6)"/><line x1="16" y1="13" x2="16" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <span class="lbl ll">20px</span>
+            </div>
+          </div>
+          <span class="lbl ll">Legible en todos los tamaños</span>
+        </div>
+      </div>
+
+      <!-- ── PALETTE INFO ── -->
+      <div class="bp b-base">
+        <span style="font-size:11px;font-weight:500;color:#78716c;text-transform:uppercase;letter-spacing:.07em;">Paleta de marca</span>
+        <div class="pr">
+          <div class="sw"><div class="sd" style="background:linear-gradient(135deg,#F5A623,#E8522A);"></div><div class="sm"><span class="shx">#F5A623 → #E8522A</span><span class="sn">Gradiente ícono</span></div></div>
+          <div class="sw"><div class="sd" style="background:#F5A623;"></div><div class="sm"><span class="shx">#F5A623</span><span class="sn">Ámbar · "Fac"</span></div></div>
+          <div class="sw"><div class="sd" style="background:#E8522A;"></div><div class="sm"><span class="shx">#E8522A</span><span class="sn">Terra</span></div></div>
+          <div class="sw"><div class="sd" style="background:#1A1510;"></div><div class="sm"><span class="shx">#1A1510</span><span class="sn">Oscuro · "Sim"</span></div></div>
+          <div class="sw"><div class="sd" style="background:#F5EFE0;border:0.5px solid #DDD5C0;"></div><div class="sm"><span class="shx">#F5EFE0</span><span class="sn">Crema</span></div></div>
+        </div>
+        <div style="height:.5px;background:rgba(42,34,24,0.12);width:100%;"></div>
+        <div style="font-size:12px;color:#78716c;line-height:1.75;">
+          <strong style="color:#1A1510;font-weight:500;">Concepto del ícono:</strong> Tenedor (restaurante) + líneas de menú (carta digital), divididos por un separador sutil.<br>
+          <strong style="color:#1A1510;font-weight:500;">Wordmark:</strong> Georgia serif — "Sim" bold oscuro + "Fac" italic ámbar. Dos pesos, una sola lectura.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PALETA DE COLORES DARK THEME -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🎨</span>
+      Paleta de Colores — Dark Amber / Terra
+    </div>
+
+    <div class="palette-grid stagger mt-3">
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #0c0a09;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Deep Black</div>
+          <div class="swatch-hex">#0c0a09</div>
+        </div>
+      </div>
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #1c1917;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Dark Base</div>
+          <div class="swatch-hex">#1c1917</div>
+        </div>
+      </div>
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #292524;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Card BG</div>
+          <div class="swatch-hex">#292524</div>
+        </div>
+      </div>
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #d97706;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Amber 600</div>
+          <div class="swatch-hex">#d97706</div>
+        </div>
+      </div>
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #ea580c;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Terra 600</div>
+          <div class="swatch-hex">#ea580c</div>
+        </div>
+      </div>
+      <div class="palette-swatch reveal">
+        <div class="swatch-color" style="background: #fef3c7;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Cream Text</div>
+          <div class="swatch-hex">#fef3c7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIPOGRAFÍA -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">✏️</span>
+      Tipografía
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <h3>Poppins</h3>
+        <p style="font-size: 0.85rem; color: var(--amber-400); font-weight: 600; margin-bottom: 8px;">Tipografía Principal</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Aa Bb Cc 123</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Usada en títulos, subtítulos, botones y cuerpo de texto. Pesos: 300, 400, 600, 700, 800.</p>
+      </div>
+      <div class="card-dark reveal">
+        <h3>Georgia</h3>
+        <p style="font-size: 0.85rem; color: var(--amber-400); font-weight: 600; margin-bottom: 8px;">Tipografía Secundaria</p>
+        <p style="font-family: Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">SimFac</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Usada exclusivamente en el logotipo wordmark. "Sim" en bold + "Fac" en italic para crear contraste visual.</p>
+      </div>
+    </div>
+
+    <!-- USOS INCORRECTOS -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🚫</span>
+      Usos Incorrectos del Logotipo
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal" style="opacity: 0.7; border-color: #991b1b;">
+        <div class="card-icon" style="font-size: 1.5rem;">❌</div>
+        <h3>No rotar el ícono</h3>
+        <p>El logotipo nunca debe aparecer inclinado, rotado o distorsionado. Mantener siempre en posición horizontal.</p>
+      </div>
+      <div class="card-dark reveal" style="opacity: 0.7; border-color: #991b1b;">
+        <div class="card-icon" style="font-size: 1.5rem;">❌</div>
+        <h3>No cambiar los colores</h3>
+        <p>El gradiente ámbar-terra es parte de la identidad. No sustituir por otros colores ni usar versiones en escala de grises como principal.</p>
+      </div>
+      <div class="card-dark reveal" style="opacity: 0.7; border-color: #991b1b;">
+        <div class="card-icon" style="font-size: 1.5rem;">❌</div>
+        <h3>No agregar sombras</h3>
+        <p>No aplicar drop shadows, outlines ni efectos 3D sobre el logotipo. Debe mantenerse plano y limpio.</p>
+      </div>
+      <div class="card-dark reveal" style="opacity: 0.7; border-color: #991b1b;">
+        <div class="card-icon" style="font-size: 1.5rem;">❌</div>
+        <h3>No redimensionar</h3>
+        <p>No estirar ni comprimir el ícono. Mantener siempre la proporción cuadrada 1:1.</p>
+      </div>
+    </div>
+
+    <!-- PROPIEDADES GESTALT -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🧠</span>
+      Propiedades Gestalt Aplicadas en la Interfaz
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <!-- 1. Proximidad -->
+      <div class="gestalt-card reveal">
+        <h4>1. Propiedad de Proximidad</h4>
+        <p>Los elementos cercanos se perciben como un grupo. En SimFac, los items del menú están agrupados por categoría con espacios definidos entre cada grupo.</p>
+        <div class="gestalt-demo-box demo-proximity">
+          <div class="group-1" style="display:flex;gap:8px;">
+            <div class="demo-item">A</div>
+            <div class="demo-item">B</div>
+            <div class="demo-item">C</div>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <div class="demo-item">D</div>
+            <div class="demo-item">E</div>
+            <div class="demo-item">F</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Semejanza -->
+      <div class="gestalt-card reveal">
+        <h4>2. Propiedad de Semejanza</h4>
+        <p>Elementos con forma similar se agrupan visualmente. Los botones de acción del menú comparten el mismo estilo para indicar que pertenecen a la misma familia.</p>
+        <div class="gestalt-demo-box demo-similarity">
+          <div class="demo-item circle">●</div>
+          <div class="demo-item square">■</div>
+          <div class="demo-item circle">●</div>
+          <div class="demo-item square">■</div>
+          <div class="demo-item circle">●</div>
+          <div class="demo-item square">■</div>
+        </div>
+      </div>
+
+      <!-- 3. Figura-Fondo -->
+      <div class="gestalt-card reveal">
+        <h4>3. Propiedad de Figura-Fondo</h4>
+        <p>El usuario distingue claramente el contenido principal (figura) del fondo. El modal de confirmación de pedido se destaca sobre el fondo oscurecido de la app.</p>
+        <div class="gestalt-demo-box demo-fg">
+          <div class="fg-figure"></div>
+        </div>
+      </div>
+
+      <!-- 4. Cierre -->
+      <div class="gestalt-card reveal">
+        <h4>4. Propiedad de Cierre</h4>
+        <p>Nuestra mente completa formas incompletas. El ícono de SimFac usa líneas sueltas que el cerebro completa como un tenedor y una carta de menú.</p>
+        <div class="gestalt-demo-box demo-closure">
+          <div class="demo-item"></div>
+          <div class="demo-item" style="border-color: var(--terra-500);"></div>
+          <div class="demo-item"></div>
+        </div>
+      </div>
+
+      <!-- 5. Continuidad -->
+      <div class="gestalt-card reveal">
+        <h4>5. Propiedad de Continuidad</h4>
+        <p>La vista sigue la dirección natural de las líneas. El flujo del proceso de pedido (seleccionar → confirmar → pagar) guía al usuario de arriba hacia abajo.</p>
+        <div class="gestalt-demo-box demo-continuity">
+          <div class="line-a"></div>
+          <div class="line-b"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <div class="nav-buttons" style="margin-top: 32px;">
+      <a href="scrum.html" class="nav-btn prev">
+        <span>←</span>
+        Scrum
+      </a>
+      <a href="prototipo.html" class="nav-btn next">
+        Prototipo
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura – SimFac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon"><svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fff"/><line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/></svg></div>
+      SimFac
+    </a>
+    <span class="page-indicator">Arquitectura</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item">Inicio</a>
+        <a href="situacion.html" class="menu-item">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item current">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item">Marca</a>
+        <a href="prototipo.html" class="menu-item">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-number">04 — Ingeniería</div>
+    <svg width="160" height="46" viewBox="0 0 216 64" style="margin-bottom: 12px;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="46" height="46" x="0" y="0" rx="12" fill="url(#lg1)"/><line x1="12" y1="10" x2="12" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="10" x2="20" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12,18C11,21.5,11,24,16,25C21,24,21,21.5,20,18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="25" x2="16" y2="38" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="13" x2="26" y2="35" stroke="#fff" stroke-width="0.6" opacity="0.2" stroke-linecap="round"/><line x1="29" y1="17" x2="41" y2="17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="24" x2="41" y2="24" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="31" x2="37" y2="31" stroke="#fff" stroke-width="2" stroke-linecap="round"/><text y="33" font-family="Georgia,serif" font-size="30" letter-spacing="-0.5"><tspan x="54" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan></text></svg>
+    <h1 class="reveal">Arquitectura, Patrones y Estándares</h1>
+    <p class="page-desc reveal">La base técnica que sostiene SimFac: arquitectura por capas, patrones de diseño y convenciones de codificación.</p>
+  </div>
+
+  <main class="section">
+
+    <!-- ARCHITECTURE DIAGRAM -->
+    <div class="section-title reveal">
+      <span class="icon">🏗️</span>
+      Arquitectura del Sistema
+    </div>
+
+    <div class="diagram-container reveal">
+      <h3>Vista por Capas y Clientes por Servidor</h3>
+
+      <div class="arch-layer layer-client">
+        <h4>
+          <span>🖥️</span>
+          Capa de Presentación (Cliente)
+          <span class="fase-badge fase1" style="margin-left: auto;">Fase 1</span>
+        </h4>
+        <p><strong style="color: #60a5fa;">HTML5 + CSS3</strong></p>
+        <p style="margin-top: 6px;">Interfaces: Panel Administrador (dashboard, CRUD), Menú Comensal (QR → catálogo → carrito → pedido). Presentación visual sin lógica de negocio en el cliente.</p>
+      </div>
+
+      <div class="arch-flow">▼ &nbsp; fetch() / REST API &nbsp; ▼</div>
+
+      <div class="arch-layer layer-server">
+        <h4>
+          <span>⚙️</span>
+          Capa de Lógica de Negocio (Servidor)
+          <span class="fase-badge fase1" style="margin-left: auto;">Fase 1</span>
+        </h4>
+        <p><strong style="color: #4ade80;">PHP + JavaScript (Lógica de Negocio)</strong></p>
+        <p style="margin-top: 6px;">Endpoints: /auth, /productos, /categorias, /pedidos, /mesas, /usuarios. Toda la lógica de validación, autenticación (JWT) y procesamiento de datos se ejecuta del lado del servidor.</p>
+      </div>
+
+      <div class="arch-flow">▼ &nbsp; Consultas SQL &nbsp; ▼</div>
+
+      <div class="arch-layer layer-data">
+        <h4>
+          <span>🗄️</span>
+          Capa de Persistencia (Datos)
+          <span class="fase-badge fase1" style="margin-left: auto;">Fase 1</span>
+        </h4>
+        <p><strong style="color: #c084fc;">MySQL — Base de Datos Relacional</strong></p>
+        <p style="margin-top: 6px;">8 tablas normalizadas (3FN). VARCHAR para roles y estados. Stored procedures para lógica compleja de pedidos. Triggers para auditoría.</p>
+      </div>
+    </div>
+
+    <!-- JUSTIFICATION -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">❓</span>
+      ¿Por qué esta arquitectura?
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p>Cada decisión técnica fue tomada con base en los recursos disponibles, el nivel formativo y las necesidades reales del proyecto:</p>
+      <div class="justification-box mt-3">
+        <h4>🔌 Arquitectura Cliente-Servidor con capas</h4>
+        <ul>
+          <li><strong>Separación de responsabilidades:</strong> El frontend, backend y base de datos son independientes, permitiendo modificar una capa sin afectar las demás.</li>
+          <li><strong>Escalabilidad:</strong> Se pueden agregar nuevos endpoints o interfaces sin reestructurar el sistema completo.</li>
+          <li><strong>Aprendizaje:</strong> Refleja la arquitectura que se usa en la industria real, preparando al estudiante para entornos profesionales.</li>
+        </ul>
+      </div>
+      <div class="justification-box mt-3">
+        <h4>🌐 API REST</h4>
+        <ul>
+          <li><strong>Estadoless:</strong> Cada petición contiene toda la información necesaria, facilitando la escalabilidad horizontal.</li>
+          <li><strong>Estándar de la industria:</strong> Es el patrón más utilizado para comunicación cliente-servidor en la web moderna.</li>
+          <li><strong>Compatibilidad:</strong> Permite que el mismo backend sirva tanto a la web como a una futura app móvil sin cambios.</li>
+        </ul>
+      </div>
+      <div class="justification-box mt-3">
+        <h4>🗄️ MySQL</h4>
+        <ul>
+          <li><strong>Datos relacionales:</strong> Los pedidos, productos y usuarios tienen relaciones naturales que se modelan mejor con SQL.</li>
+          <li><strong>ACID:</strong> Garantiza la integridad de las transacciones (un pedido no puede quedar a medio registrar).</li>
+          <li><strong>Disponibilidad:</strong> Es gratuito, de código abierto y ampliamente documentado en español.</li>
+        </ul>
+      </div>
+      <div class="justification-box mt-3">
+        <h4>🌐 JavaScript en el servidor</h4>
+        <ul>
+          <li><strong>Lógica centralizada:</strong> JavaScript se ejecuta en el servidor (PHP/Node.js) para procesar validaciones, cálculos y reglas de negocio, garantizando que el cliente no pueda manipular la lógica del sistema.</li>
+          <li><strong>Cliente ligero:</strong> El navegador solo recibe HTML+CSS estático y realiza peticiones al servidor mediante fetch(), sin ejecutar lógica de negocio local.</li>
+          <li><strong>Seguridad:</strong> Al no tener lógica en el cliente, se evita que usuarios malintencionados manipulen el comportamiento de la aplicación.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PATTERNS -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🧩</span>
+      Patrones de Diseño
+    </div>
+
+    <div class="card-dark reveal mb-3">
+      <p style="margin-bottom: 16px;"><strong style="color: var(--amber-400);">¿Por qué MVC y Singleton?</strong> Ambos patrones se complementan dentro del contexto del proyecto formativo:</p>
+      <div class="justification-box mt-3">
+        <h4>📐 MVC (Model-View-Controller)</h4>
+        <ul>
+          <li><strong>Separación de responsabilidades:</strong> El Controller recibe la petición HTTP, el Model gestiona la base de datos y la View genera la respuesta HTML. Cada capa se puede modificar de forma independiente.</li>
+          <li><strong>Estándar de la industria:</strong> Es el patrón más enseñado y utilizado en desarrollo web, lo que facilita la evaluación por parte de los instructores y la comprensión del código.</li>
+          <li><strong>Escalabilidad:</strong> Permite agregar nuevas vistas (mesero, cajero) sin modificar la lógica del modelo existente.</li>
+        </ul>
+      </div>
+      <div class="justification-box mt-3">
+        <h4>🔑 Singleton (Conexión a BD)</h4>
+        <ul>
+          <li><strong>Efficiencia:</strong> Mantiene una única instancia de conexión a MySQL durante todo el ciclo de vida del servidor, evitando abrir y cerrar conexiones en cada petición.</li>
+          <li><strong>Control de recursos:</strong> En un entorno de hosting compartido (como el que usa SENA), limitar el número de conexiones simultáneas es crítico para no saturar el servidor.</li>
+          <li><strong>Consistencia:</strong> Garantiza que todas las operaciones compartan la misma configuración de conexión y codificación.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <div class="card-icon">📐</div>
+        <h3>MVC (Model-View-Controller)</h3>
+        <p>Separación entre datos (Model), interfaz (View) y lógica (Controller) en el backend. Cada ruta del API actúa como Controller, manipula Models y responde al cliente.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">📦</div>
+        <h3>Repository</h3>
+        <p>Capa de abstracción entre el Controller y la base de datos. Centraliza todas las consultas SQL, facilitando pruebas y cambios de motor de base de datos.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🔑</div>
+        <h3>Singleton</h3>
+        <p>Una única instancia de la conexión a la base de datos durante todo el ciclo de vida del servidor, evitando abrir y cerrar conexiones innecesariamente.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">📡</div>
+        <h3>Observer</h3>
+        <p>Para actualizaciones en tiempo real: cuando el estado de un pedido cambia, se notifica automáticamente al panel del administrador y al módulo del mesero.</p>
+      </div>
+    </div>
+
+    <!-- ESTANDARES -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">📏</span>
+      Estándares de Codificación
+    </div>
+
+    <div class="tabs-container reveal">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-db">Base de Datos</button>
+        <button class="tab-btn" data-tab="tab-frontend">Frontend</button>
+        <button class="tab-btn" data-tab="tab-backend">Backend</button>
+      </div>
+
+      <div id="tab-db" class="tab-content active">
+        <div class="card-dark">
+          <ul style="padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Nombres:</strong> snake_case para tablas y columnas, sin espacios ni caracteres especiales.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Precios:</strong> DECIMAL(10,2) para evitar problemas de punto flotante.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Contraseñas:</strong> Hash con bcrypt (salt rounds = 10), nunca almacenadas en texto plano.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Auditoría:</strong> Triggers en tablas críticas que registran cambios en logs_auditoria.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Stored Procedures:</strong> Para la inserción de pedidos (que afecta múltiples tablas de forma atómica).</li>
+            <li><strong style="color: var(--text-primary);">Normalización:</strong> Hasta 3FN, sin datos redundantes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="tab-frontend" class="tab-content">
+        <div class="card-dark">
+          <ul style="padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">JavaScript:</strong> ES6+, camelCase para variables y funciones.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">HTML:</strong> Semántico (header, main, section, nav, footer).</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">CSS:</strong> Variables CSS para el sistema de diseño, Flexbox y Grid para layouts.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Responsivo:</strong> Mobile-first, probado en 320px, 768px y 1440px.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Fetch:</strong> Todas las peticiones al API con manejo de errores (try/catch) y feedback visual.</li>
+            <li><strong style="color: var(--text-primary);">Accesibilidad:</strong> Labels en formularios, alt en imágenes, contraste WCAG AA.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="tab-backend" class="tab-content">
+        <div class="card-dark">
+          <ul style="padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Lenguaje:</strong> JavaScript (Node.js/Express) o PHP — según disponibilidad del servidor.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Endpoints:</strong> Nombres en plural y snake_case (/api/ordenes, /api/categorias_productos).</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Códigos HTTP:</strong> Uso correcto (200, 201, 400, 401, 404, 500).</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Autenticación:</strong> JWT con expiración de 8 horas para la sesión del administrador.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: var(--text-primary);">Validación:</strong> Sanitización de inputs en servidor, nunca confiar en la validación del cliente.</li>
+            <li><strong style="color: var(--text-primary);">CORS:</strong> Configurado para permitir solo el dominio del frontend.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROCESS DIAGRAM -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🔄</span>
+      Diagrama de Proceso — Flujo de un Pedido
+    </div>
+
+    <div class="diagram-container reveal">
+      <h3>Desde que el comensal escanea el QR hasta la entrega</h3>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-icon">📱</div>
+          <div class="step-label">Escanea QR</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📋</div>
+          <div class="step-label">Ve el Menú</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🛒</div>
+          <div class="step-label">Arma Pedido</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">✅</div>
+          <div class="step-label">Confirma</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📡</div>
+          <div class="step-label">API REST</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🗄️</div>
+          <div class="step-label">Guarda en BD</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">👨‍🍳</div>
+          <div class="step-label">Cocina</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">✅</div>
+          <div class="step-label">Listo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <div class="nav-buttons">
+      <a href="diagramas.html" class="nav-btn prev">
+        <span>←</span>
+        Diagramas
+      </a>
+      <a href="scrum.html" class="nav-btn next">
+        Metodología Scrum
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

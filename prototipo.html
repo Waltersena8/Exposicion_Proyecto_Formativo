@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototipo – SimFac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <div class="brand-icon"><svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fff"/><line x1="16" y1="13" x2="16" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="13" x2="22" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="28" y1="13" x2="28" y2="24" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><path d="M16,24C15,28,15,32,22,33C29,32,29,28,28,24" fill="none" stroke="#1A1510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="33" x2="22" y2="52" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="22" x2="56" y2="22" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="32" x2="56" y2="32" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/><line x1="40" y1="42" x2="51" y2="42" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/></svg></div>
+      SimFac
+    </a>
+    <span class="page-indicator">Prototipo</span>
+  </header>
+
+  <!-- MENU TOGGLE -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- FULLSCREEN MENU OVERLAY -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <div class="menu-brand">SimFac</div>
+      <nav>
+        <a href="index.html" class="menu-item">Inicio</a>
+        <a href="situacion.html" class="menu-item">Situación Problema</a>
+        <a href="objetivos.html" class="menu-item">Objetivos</a>
+        <a href="diagramas.html" class="menu-item">Diagramas</a>
+        <a href="arquitectura.html" class="menu-item">Arquitectura</a>
+        <a href="scrum.html" class="menu-item">Scrum</a>
+        <a href="marca.html" class="menu-item">Marca</a>
+        <a href="prototipo.html" class="menu-item current">Prototipo</a>
+      </nav>
+      <div class="menu-footer">
+        <p>Sistema de Gestión de Pedidos para Restaurantes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-number">07 — Prototipado</div>
+    <svg width="160" height="46" viewBox="0 0 216 64" style="margin-bottom: 12px;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#E8522A"/></linearGradient></defs><rect width="46" height="46" x="0" y="0" rx="12" fill="url(#lg1)"/><line x1="12" y1="10" x2="12" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="10" x2="20" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12,18C11,21.5,11,24,16,25C21,24,21,21.5,20,18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="25" x2="16" y2="38" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="13" x2="26" y2="35" stroke="#fff" stroke-width="0.6" opacity="0.2" stroke-linecap="round"/><line x1="29" y1="17" x2="41" y2="17" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="24" x2="41" y2="24" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="31" x2="37" y2="31" stroke="#fff" stroke-width="2" stroke-linecap="round"/><text y="33" font-family="Georgia,serif" font-size="30" letter-spacing="-0.5"><tspan x="54" font-weight="700" fill="#fef3c7">Sim</tspan><tspan font-style="italic" font-weight="400" fill="#F5A623">Fac</tspan></text></svg>
+    <h1 class="reveal">Prototipos Navegables</h1>
+    <p class="page-desc reveal">Los prototipos de alta fidelidad diseñados en Figma que validaron la experiencia de usuario antes del desarrollo.</p>
+  </div>
+
+  <main class="section">
+
+    <!-- FIGMA PROTOTYPES -->
+    <div class="section-title reveal">
+      <span class="icon">🎨</span>
+      Prototipos en Figma
+    </div>
+
+    <p class="reveal" style="margin-bottom: 24px; color: var(--text-muted);">
+      Diseñamos dos prototipos navegables en Figma que representan las dos interfaces principales del sistema. Estos prototipos fueron validados con usuarios reales antes de iniciar el desarrollo frontend.
+    </p>
+
+    <div class="card-grid stagger">
+      <!-- ADMIN PROTO -->
+      <a href="https://www.figma.com/proto/Prototipo-SimFac/Admin?node-id=1-3" target="_blank" rel="noopener" class="proto-link reveal">
+        <div class="proto-icon">🖥️</div>
+        <h3>Panel de Administración</h3>
+        <p>Interfaz web para el administrador del restaurante. Incluye: dashboard con métricas, gestión de productos (CRUD), gestión de categorías, visualización de pedidos en tiempo real y gestión de usuarios.</p>
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; justify-content: center;">
+          <span class="fase-badge fase1">Fase 1</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Escritorio / Web</span>
+        </div>
+        <div class="proto-btn">
+          Abrir Prototipo Admin
+          <span>↗</span>
+        </div>
+      </a>
+
+      <!-- COMENSAL PROTO -->
+      <a href="https://www.figma.com/proto/Prototipo-SimFac/Comensal?node-id=92-211" target="_blank" rel="noopener" class="proto-link reveal">
+        <div class="proto-icon">📱</div>
+        <h3>Menú del Comensal (QR)</h3>
+        <p>Interfaz mobile-first para el cliente que escanea el QR en su mesa. Incluye: menú digital por categorías, detalle del producto, carrito de compras y confirmación de pedido sin registro.</p>
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; justify-content: center;">
+          <span class="fase-badge fase1">Fase 1</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Mobile / Responsive</span>
+        </div>
+        <div class="proto-btn">
+          Abrir Prototipo Comensal
+          <span>↗</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- DESIGN DECISIONS -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">💡</span>
+      Decisiones de Diseño
+    </div>
+
+    <div class="card-grid stagger mt-3">
+      <div class="card-dark reveal">
+        <div class="card-icon">🌑</div>
+        <h3>Tema Oscuro</h3>
+        <p>Los restaurantes suelen tener iluminación tenue. Un tema oscuro reduce la fatiga visual y se ve premium, creando una experiencia agradable para el comensal que consulta el menú en su mesa.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">🎯</div>
+        <h3>Mobile-First para Comensal</h3>
+        <p>El comensal accede desde su teléfono vía QR. El diseño se concibió primero para pantallas pequeñas (320px+) y luego se adaptó a escritorio para el panel admin.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">👆</div>
+        <h3>Minimal Clicks</h3>
+        <p>El flujo QR → categoría → producto → carrito → pedido requiere el mínimo de interacciones. No hay registro, no hay formularios, no hay fricción.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div class="card-icon">📊</div>
+        <h3>Dashboard Informativo</h3>
+        <p>El panel admin muestra pedidos recientes, productos más vendidos y estado de mesas de un vistazo, sin necesidad de navegar entre múltiples pantallas.</p>
+      </div>
+    </div>
+
+    <!-- USER FLOW -->
+    <div class="section-title mt-4 reveal">
+      <span class="icon">🔄</span>
+      Flujo del Usuario
+    </div>
+
+    <div class="diagram-container reveal">
+      <h3>Flujo del Comensal (Fase 1)</h3>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-icon">📷</div>
+          <div class="step-label">Escanea<br>QR</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📂</div>
+          <div class="step-label">Selecciona<br>Categoría</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🍔</div>
+          <div class="step-label">Elije<br>Producto</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🛒</div>
+          <div class="step-label">Revisa<br>Carrito</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">✅</div>
+          <div class="step-label">Envía<br>Pedido</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🔔</div>
+          <div class="step-label">Espera<br>Notificación</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="diagram-container reveal">
+      <h3>Flujo del Administrador (Fase 1)</h3>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-icon">🔐</div>
+          <div class="step-label">Inicia<br>Sesión</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📊</div>
+          <div class="step-label">Ve<br>Dashboard</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📋</div>
+          <div class="step-label">Gestiona<br>Menú</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">📦</div>
+          <div class="step-label">Ve<br>Pedidos</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">✏️</div>
+          <div class="step-label">Actualiza<br>Estado</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <div class="nav-buttons">
+      <a href="marca.html" class="nav-btn prev">
+        <span>←</span>
+        Marca
+      </a>
+      <a href="index.html" class="nav-btn next">
+        Volver al Inicio
+        <span>→</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">SimFac</div>
+    <p>© 2025 – Proyecto Formativo SENA | Diseñado por Walter & Omar</p>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>
